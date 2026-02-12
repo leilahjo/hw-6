@@ -1,0 +1,4 @@
+
+1. The credit-score call has a data clump because it's passing a person's information as four separate parameters: first name, last name, SSN, and address. This makes the code less readable and error prone. It would be cleaner to bundle all of these fields into a single Person object and pass that instead.
+
+2. The Person class has both primitive obsession and a data clump since it's using basic strings for data like names, addresses, and emails. These fields aren't just  text, they have their own structure and meaning. Creating dedicated classes like Name, Address, and Email would make the code clearer and more organized.
